@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header h-fit mxs:px-2.5 xs:px-2.5 xs:pt-2.5 mxs:pt-2.5 sm:px-4 sm:pt-4 2xl:px-44">
+
+        <div class="flex justify-between items-center ">
+            <div class="hampurger m9n:block 9n:hidden text-2xl" onclick="openNav ()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo"><a href="#"><img src="../images/logo.png" alt=""></a></div>
+            <ul id="header_menu"
+                class="header_menu m9n:hidden 9n:flex lg:gap-3 md:gap-2 md:text-xs xl:gap-3 xl:text-base lg:text-xs 2xl:gap-4  font-bold">
+                <li class="header_menu-list-items text-center"><a href="#">Giới Thiệu</a></li>
+                <li class="header_menu-list-items text-center"><a href="#">Đối tượng khách hàng</a></li>
+                <li class="header_menu-list-items text-center"><a href="#">Quy trình</a></li>
+                <li class="header_menu-list-items text-center"><a href="#">Bảng giá</a></li>
+                <li class="header_menu-list-items text-center"><a href="#">Cảm nhận của khách hàng</a></li>
+                <li class="header_menu-list-items text-center"><a href="#">Đội ngũ bác sĩ</a></li>
+                <li class="header_menu-list-items text-center"><a href="#">Hình ảnh & Video</a></li>
+            </ul>
+            <a class="header-call p-2.5 gap-1 " href="tel:19001806"><span class="header-icon-call p-1"><i
+                        class="fa-solid fa-phone-volume"></i></span> <span class="header-phone mxs:hidden">Gọi 1900
+                    1806</span></a>
+        </div>
+        <div class="banner flex mmd:flex-col mmd:items-center mt-9 h-full">
+            <div class="sm:w-3/5 flex flex-col mmd:items-center justify-center header-title">
+                <h1 class="lg:text-4xl  sm:text-2xl font-bold title-banner">Dịch vụ Khám bệnh tại nhà </h1>
+                <h1 class="lg:text-4xl  sm:text-2xl font-bold title-banner mb-6"> An tâm chẳng lo ngại đường xa</h1>
+                <p class="mb-12 text-base">Bệnh viện Đa khoa Phương Đông triển khai dịch vụ khám bệnh tại nhà giúp các
+                    gia đình có
+                    con nhỏ,
+                    người cao tuổi, khó đi lại... được hưởng sự chăm sóc y tế cao cấp, an toàn, hiệu quả.</p>
+                <a class="consultation flex w-max gap-2 py-4 px-6 rounded-3xl" href="#"><img
+                        src="../images/calender.png" alt=""> Đăng
+                    ký tư
+                    vấn</a>
+            </div>
+            <div class="header-img md:w-2/5 mmd:w-7/12 mmd:mt-3 sm:flex sm:items-end "><img
+                    src="../images/image-header.png" alt=""></div>
+        </div>
+        <div id="close-menu" onclick="closeNav()"></div>
+    </header>
+    <main class="main mt-14 mx-auto">
+        <section class="introduce flex items-center mmd:px-4 sm:pr-4 2xl:pr-44">
+            <img class="mmd:hidden md:w-1/2 lg:w-2/5" src="../images/intro-img.png" alt="">
+            <div class="flex flex-col mmd:items-center mmd:justify-center">
+                <h2 class="section-title font-bold 2xl:text-xl xl:text-lg lg:text-sm flex items-center gap-3">
+                    <hr class="rounded-xl mmd:hidden"> Giới Thiệu
+                </h2>
+                <h3 class="lg:text-2xl 2xl:text-4xl mb-6 font-bold text-intro">
+                    Tạo ra tâm lý thoải mái, hỗ trợ điều trị tích cực cho người bệnh
+                </h3>
+                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Dịch vụ khám bệnh tại nhà có thể áp dụng với
+                    mọi đối tượng người bệnh, đặc biệt
+                    tiện lợi đối với
+                    những người gặp khó khăn khi di chuyển, người già neo đơn, người khuyết tật, gia đình có trẻ nhỏ…
+
+
+                </p>
+                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">
+                    Trẻ nhỏ, cũng như người già, là đối tượng rất dễ mắc bệnh do hệ miễn dịch chưa hoàn thiện, sức đề
+                    kháng kém. Nhiều cha mẹ e ngại việc đưa trẻ đi khám chữa bệnh ở bệnh viện, trạm xá đông người vì sợ
+                    lây nhiễm chéo. Giờ đây, với dịch vụ khám tại nhà, cha mẹ và bé không cần chịu đựng tình trạng quá
+                    tải, đợi chờ để thăm khám hay mất nhiều thời gian và công sức di chuyển để chăm bé.
+                </p>
+                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Người cao tuổi dễ mắc các bệnh về cơ xương
+                    khớp, huyết áp, tim mạch,
+                    tiểu đường....
+                    Đây là những
+                    bệnh khó điều trị khỏi dứt điểm mà chỉ có thể kiểm soát, phải thường xuyên theo dõi và chăm sóc.
+                    Dịch vụ khám bệnh tại nhà sẽ giúp các gia đình chăm sóc người già ngay tại nơi ở là giải pháp y tế
+                    tiện lợi, tiết kiệm thời gian, xử trí các tình huống bất ngờ một cách kịp thời và nhanh chóng.</p>
+                <div class="intro-phone mt-10 gap-6 mxs:justify-center flex flex-wrap">
+                    <a class="consultation flex w-max gap-2 py-4 px-6 rounded-3xl" href="#"><img
+                            src="../images/calender.png" alt=""> Đăng
+                        ký tư
+                        vấn</a>
+                    <a class="consultation flex w-max gap-2 py-4 px-6 rounded-3xl items-center" href="#"><i
+                            class="fa-solid fa-phone-volume"></i>
+                        Gọi cho chúng tôi</a>
+                </div>
+            </div>
+        </section>
+        <section
+            class="advantage msm:p-2.5 md:gap-3 mt-20 flex 2xl:gap-14 2xl:mt-20 justify-between sm:px-4 lg:mt-14 2xl:pl-44  items-center">
+            <div class="mmd:flex mmd:flex-col mmd:items-center">
+                <h2 class="section-title font-bold 2xl:text-xl xl:text-lg lg:text-sm flex items-center gap-3 ">
+                    <hr class="mmd:hidden"> Ưu Điểm
+                </h2>
+                <h3 class="lg:text-2xl 2xl:text-4xl font-bold mb-6 text-intro"> Vì sao khách hàng nên lựa chọn dịch vụ
+                    Khám bệnh tại nhà của Bệnh viện Phương Đông?</h3>
+                <div class="advantage-list mxs:flex-wrap mmd:gap-2 flex 2xl:gap-10 xl:gap-8 lg:gap-5 md:gap-3">
+                    <div class="mxs:w-full">
+                        <div class="advantage-list-items mxs:my-5 xs:my-14 mmd:flex mmd:flex-col mmd:items-center">
+                            <img src="../images/frame-1-advantage.png" alt="">
+                            <h4 class="text-xl font-semibold mb-3">Đội ngũ bác sĩ giàu y đức</h4>
+                            <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Đội ngũ bác sĩ khám sàng lọc và tư
+                                vấn có trình độ chuyên môn cao, giàu kinh nghiệm, tư
+                                vấn tận tình.</p>
+                        </div>
+                        <div class="advantage-list-items  mmd:flex mmd:flex-col mmd:items-center">
+                            <img src="../images/frame-2-advantage.png" alt="">
+                            <h4 class="text-xl font-semibold mb-3">Cảm giác thư thái, bình yên</h4>
+                            <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Không gian bệnh viện theo mô hình
+                                khách sạn hiện đại, khuôn viên rộng gần 10ha với hàng
+                                vạn cây xanh</p>
+                        </div>
+                    </div>
+                    <div class="lg:mt-14 mxs:w-full">
+                        <div class="advantage-list-items mxs:my-5 xs:my-14 mmd:flex mmd:flex-col mmd:items-center">
+                            <img src="../images/frame-3-advantage.png" alt="">
+                            <h4 class="text-xl font-semibold mb-3">Chất lượng dịch vụ hàng đầu</h4>
+                            <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Trang bị đầy đủ phương tiện y tế
+                                cùng ekip cấp cứu luôn túc trực giúp theo dõi và xử trí
+                                kịp thời các trường hợp</p>
+                        </div>
+                        <div class="advantage-list-items mmd:flex mmd:flex-col mmd:items-center">
+                            <img src="../images/frame-4-advantage.png" alt="">
+                            <h4 class="text-xl font-semibold mb-3">Chi phí hợp lý, tiết kiệm</h4>
+                            <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Xây dựng đa dạng gói khám với chi
+                                phí hợp lý, hỗ trợ trả góp qua thẻ tín dụng 0% lãi suất
+                                khi mua trọn gói. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="mmd:hidden md:w-2/5 lg:w-2/5" src="../images/advantage-img.png" alt="">
+        </section>
+        <section
+            class="image flex m6m:p-2.5 6m:p-2.5 justify-between mmd:flex-wrap md:gap-3 2xl:gap-14 2xl:mt-36 sm:px-4 lg:mt-14 2xl:pl-44 items-center mt-36">
+            <div class="lg:w-2/5 mmd:w-full mmd:flex mmd:flex-col mmd:items-center md:w-2/5">
+                <h2 class="section-title font-bold 2xl:text-xl xl:text-lg lg:text-sm flex items-center gap-3 ">
+                    <hr class="mmd:hidden"> Hình ảnh
+                </h2>
+                <h3 class="lg:text-2xl 2xl:text-4xl font-bold mb-6 text-intro"> Hình ảnh khách hàng sử dụng
+                    dịch vụ Khám bệnh tại nhà</h3>
+                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Sapien, nec morbi mauris,
+                    turpis fringilla
+                    condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa. Tellus etiam nisl
+                    pretium feugiat nulla. Pulvinar nisl et suspendisse velit ornare sed dolor, convallis dolor. Et,
+                    dignissim amet sed orci at amet id nulla mauris. Sagittis turpis eget mauris massa congue in rutrum
+                    vel. Augue est nunc a id quis mattis. Lorem ipsum dolor sit amet, consectetur.</p>
+                <a class="consultation lg:my-14 mlg:my-5 flex w-max gap-2 py-4 px-6 rounded-3xl" href="#"><img
+                        src="../images/calender.png" alt=""> Đăng
+                    ký tư
+                    vấn</a>
+                <div class="arrow flex gap-4 my-4">
+                    <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                        <i class="fa-solid flex items-center fa-arrow-left"></i>
+                    </button>
+                    <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                        <i class="fa-solid flex items-center fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mmd:w-full mmd:flex mmd:justify-center md:w-3/5">
+                <img class="md:w-full mmd:w-3/4" src="../images/img-sec.png" alt="">
+            </div>
+        </section>
+        <section
+            class="ask h-max flex md:justify-center xs:mt-20 mxs:mt-10  md:gap-3 2xl:gap-14 2xl:pt-32 2xl:mt-32 justify-between 2xl:p-44 2xl:pb-32 sm:px-4 lg:mt-14 2xl:pl-44">
+            <div class="md:hidden lg:block lg:w-2/6"></div>
+            <div class=" md:w-full lg:w-4/6 mlg:flex pt-4 mlg:flex-col mlg:items-center">
+                <h2 class="section-title font-bold  2xl:text-xl xl:text-lg lg:text-sm flex items-center gap-3 ">
+                    <hr class="mmd:hidden">Câu Hỏi
+                </h2>
+                <h3 class="lg:text-2xl 2xl:text-4xl mb-6 text-intro font-bold"> Những Câu Hỏi Thường Gặp</h3>
+                <ul class="ask-list">
+                    <li class="ask-list-items p-3"><a class="flex justify-between items-center w-full" href="#">Bệnh
+                            viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
+                            không? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Bệnh
+                            viện Đa khoa Phương Đông có phục vụ ăn uống ngay trong
+                            khuôn
+                            viên không? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Bệnh
+                            viện Đa khoa Phương Đông có áp dụng Bảo hiểm Y tế, Bảo
+                            hiểm
+                            Bảo lãnh không? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Bệnh
+                            viện Đa khoa Phương Đông có dịch vụ tiêm chủng trẻ em
+                            không? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Thời
+                            gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế
+                            nào? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Thời
+                            gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế
+                            nào? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Bệnh
+                            viện Đa khoa Phương Đông được đầu tư về cơ sở vật chất
+                            như
+                            thế nào? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Có thể
+                            tham khảo lịch khám chi tiết của Bệnh viện Đa khoa
+                            Phương
+                            Đông ở đâu? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Bệnh
+                            viện Đa khoa Phương Đông đang triển khai các gói khám
+                            sức
+                            khỏe nào? <i class="fa-solid fa-plus"></i></a></li>
+                    <li class="ask-list-items p-3"><a class=" flex justify-between items-center w-full" href="#">Thời
+                            gian hoạt động của Bệnh viện Đa khoa Phương Đông như thế
+                            nào? <i class="fa-solid fa-plus"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section
+            class="price_list 2xl:p-44 mmd:flex-wrap flex md:mt-16 lg:mt-40 items-center mxs:p-2.5 xs:p-2.5 md:p-4">
+            <div class="md:w-1/2 mmd:w-full mmd:flex mmd:flex-col mmd:items-center">
+                <h2 class="section-title font-bold  2xl:text-xl xl:text-lg lg:text-sm flex items-center gap-3 ">
+                    <hr class="mmd:hidden">Bảng giá
+                </h2>
+                <h3 class="lg:text-2xl 2xl:text-4xl mb-6 text-intro font-bold"> Bảng giá dịch vụ tại Phương Đông</h3>
+                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing
+                    elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio
+                    posuere a
+                    cursus netus massa. Tellus etiam nisl pretium feugiat nulla. Pulvinar nisl et suspendisse velit
+                    ornare
+                    sed dolor, convallis dolor. Et, dignissim amet sed orci at amet id nulla mauris. Sagittis turpis
+                    eget
+                    mauris massa congue in rutrum vel. Augue est nunc a id quis mattis. Lorem ipsum dolor sit amet,
+                    consectetur.
+                </p>
+                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Lưu ý: Tùy từng thời điểm, bảng giá có thể có
+                    thay
+                    đổi. Để được báo giá chính xác nhất, quý khách liên hệ
+                    tổng đài 19001806, chuyên viên sẽ nhanh chóng tư vấn, hỗ trợ quý khách đặt lịch và giải đáp thắc mắc
+                </p>
+                <h4 class="lg:text-2xl 2xl:text-4xl mb-6 text-intro font-bold">Quý khách vui lòng để lại số điện
+                    thoại,
+                    chúng tôi sẽ liên hệ lại ngay!</h4>
+                <form action="" class="relative lg:mt-6 w-full lg:mb-10">
+                    <input type="text" placeholder="Nhập số điện thoại..." class="py-5 pl-6 rounded-3xl w-full h-14">
+                    <button class="absolute header-call p-2.5 gap-1 top-0 right-0 bottom-0 h-10"><span class="p-1"><i
+                                class="fa-regular fa-paper-plane"></i></span> <span class="header-phone mxs:hidden">Gửi
+                            Thông Tin</span></button>
+                </form>
+                <div class="arrow flex gap-4 my-4">
+                    <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                        <i class="fa-solid flex items-center fa-arrow-left"></i>
+                    </button>
+                    <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                        <i class="fa-solid flex items-center fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 mmd:w-full"><img src="../images/img-list-price.jpg" alt=""></div>
+        </section>
+        <section class="discount 2xl:p-44 md:mt-16 lg:mt-40 mxs:p-2.5 xs:p-2.5 md:p-4">
+            <div class="mmd:flex mmd:flex-col mmd:items-center">
+                <h2 class="section-title font-bold  2xl:text-xl xl:text-lg lg:text-sm flex items-center gap-3 ">
+                    <hr class="mmd:hidden">Ưu Đãi
+                </h2>
+                <h3 class="lg:text-2xl 2xl:text-4xl mb-6 text-intro font-bold"> Chương trình ưu đãi đặc biệt dành cho
+                    gói Khám bệnh tại nhà</h3>
+            </div>
+            <div
+                class="discount_slide_list flex mlg:flex-wrap lg:flex-nowrap msm:gap-3 sm:gap-2 md:gap-2 lg:gap-6 mt-6">
+                <div
+                    class="discount-items msm:w-full lg:w-1/3 flex flex-col items-center p-3 rounded-3xl ease-in-out duration-500">
+                    <img src="../images/img-discount.png" alt="">
+                    <h4 class="font-bold lg:text-xl lg:pt-6 lg:pb-2 discount-title">Ưu đãi dịch vụ Khám bệnh tại nhà cho
+                        người trên 60
+                        tuổi</h4>
+                    <h4 class="font-bold lg:text-xl value-discount">Giảm ngay <span class="lg:text-5xl">40%</span></h4>
+                    <ul class="lg:py-6 list-check-discount">
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi từ
+                                01/08 -
+                                31/08/2022</span></li>
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi dành
+                                cho
+                                bán kính 10km</span></li>
+                        <li class=" flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                                trình ưu đãi dành
+                                cho
+                                Gia đình 4 người</span></li>
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi dành
+                                cho
+                                Gia đình 4 người</span></li>
+                    </ul>
+                    <button class="rounded-xl btn-signin py-3 px-8 mb-8 mt-6">Đăng ký ngay</button>
+                </div>
+                <div
+                    class="discount-items msm:w-full lg:w-1/3 flex flex-col items-center p-3 rounded-3xl ease-in-out duration-500">
+                    <img src="../images/img-discount.png" alt="">
+                    <h4 class="font-bold lg:text-xl lg:pt-6 lg:pb-2 discount-title">Ưu đãi dịch vụ Khám bệnh tại nhà cho
+                        người trên 60
+                        tuổi</h4>
+                    <h4 class="font-bold lg:text-xl value-discount">Giảm ngay <span class="lg:text-5xl">40%</span></h4>
+                    <ul class="lg:py-6 list-check-discount">
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi từ
+                                01/08 -
+                                31/08/2022</span></li>
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi dành
+                                cho
+                                bán kính 10km</span></li>
+                        <li class=" flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                                trình ưu đãi dành
+                                cho
+                                Gia đình 4 người</span></li>
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi dành
+                                cho
+                                Gia đình 4 người</span></li>
+                    </ul>
+                    <button class="rounded-xl btn-signin py-3 px-8 mb-8 mt-6">Đăng ký ngay</button>
+                </div>
+                <div
+                    class="discount-items msm:w-full lg:w-1/3 flex flex-col items-center p-3 rounded-3xl ease-in-out duration-500">
+                    <img src="../images/img-discount.png" alt="">
+                    <h4 class="font-bold lg:text-xl lg:pt-6 lg:pb-2 discount-title">Ưu đãi dịch vụ Khám bệnh tại nhà cho
+                        người trên 60
+                        tuổi</h4>
+                    <h4 class="font-bold lg:text-xl value-discount">Giảm ngay <span class="lg:text-5xl">40%</span></h4>
+                    <ul class="lg:py-6 list-check-discount">
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi từ
+                                01/08 -
+                                31/08/2022</span></li>
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi dành
+                                cho
+                                bán kính 10km</span></li>
+                        <li class=" flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                                trình ưu đãi dành
+                                cho
+                                Gia đình 4 người</span></li>
+                        <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương trình
+                                ưu đãi dành
+                                cho
+                                Gia đình 4 người</span></li>
+                    </ul>
+                    <button class="rounded-xl btn-signin py-3 px-8 mb-8 mt-6">Đăng ký ngay</button>
+                </div>
+            </div>
+            <div class="arrow flex gap-4 my-4">
+                <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                    <i class="fa-solid flex items-center fa-arrow-left"></i>
+                </button>
+                <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                    <i class="fa-solid flex items-center fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+        <section
+            class="advise flex items-center msm:justify-center sm:justify-between 2xl:px-44 md:pt-16 md:mt-16 lg:mt-40 mxs:p-2.5 xs:p-2.5 md:p-4">
+            <div class="title-advise w-2/5 msm:hidden text-white">
+                <h2 class="text-5xl">
+                    Chúng tôi luôn tin tưởng rằng
+                </h2>
+                <h2 class="text-5xl">
+                    Dịch vụ của Phương Đông sẽ làm Quý khách hài lòng!
+                </h2>
+            </div>
+            <div class="form-advise rounded-2xl msm:w-full sm:w-1/2 ">
+                <div class="title-form-advise text-center  p-4">
+                    <h2 class="md:text-xl font-bold pb-1">Đăng Ký Tư Vấn Miễn Phí</h2>
+                    <p class="font-semibold md:text-sm">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
+                        thời!</p>
+                </div>
+                <form action="" class=" mmd:p-4 md:p-8">
+                    <input class="rounded-md m-4 p-4" placeholder="Họ Tên (*)" type="text">
+                    <input class="rounded-md m-4 p-4" type="tel" placeholder="Số Điện Thoại(*)">
+                    <input class="rounded-md m-4 p-4" type="email" placeholder="E-mail">
+                    <input class="rounded-md m-4 p-4" type="text" placeholder="Nội Dung">
+                    <button type="button" class="consultation m-4 flex w-max gap-2 py-4 px-6 rounded-3xl"><img
+                            src="../images/calender.png" alt=""> Đăng
+                        ký tư
+                        vấn</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer h-fit mxs:px-2.5 xs:px-2.5 xs:pt-2.5 mxs:pt-2.5 sm:px-4 sm:pt-4 2xl:px-44">
+        <div class="logo-footer my-6">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <div class="list-footer mmd:flex-wrap flex gap-8 justify-between text-white">
+            <div class=" mxs:w-full">
+                <h2>BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
+                <ul class="address">
+                    <li class="w-full">Địa chỉ: Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</li>
+                    <li class="w-full">Email: bvphuongdong@phuongdonghospital.vn</li>
+                    <li class="w-full"><a href="tel:19001806">Hotline: 1900 1806</a></li>
+                </ul>
+            </div>
+            <div class=" mxs:w-full">
+                <h2>Thời gian mở cửa</h2>
+                <ul class="time">
+                    <li class="w-full">Thứ 2 - Chủ nhật : 07:30 -19:00</li>
+                    <li class="w-full">Cấp cứu 24/7: 0833 015 115</li>
+                </ul>
+            </div>
+            <div class=" mxs:w-full">
+                <h2>Liên hệ</h2>
+                <ul class="contact">
+                    <li class="w-full"><a href="tel:0911615115">Hotline Tiêm chủng: 0911 615 115 </a></li>
+                    <li class="w-full"><a href="tel:0911615115">Hotline Khoa sản : 0911 615 115</a></li>
+                </ul>
+            </div>
+            <div class=" mxs:w-full">
+                <h2>Mạng xã hội</h2>
+                <ul class="socialnetwork flex pt-2 gap-2">
+                    <li class="w-full"><a href="#"><img src="../images/bi_facebook.png" alt=""></a></li>
+                    <li class="w-full"><a href="#"><img src="../images/twitter.png" alt=""></a></li>
+                    <li class="w-full"><a href="#"><img src="../images/youtube.png" alt=""></a></li>
+                    <li class="w-full"><a href="#"><img src="../images/instagam.png" alt=""></a></li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+    </footer>
+    <script src="app.js"> </script>
+</body>
+
+</html>

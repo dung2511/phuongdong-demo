@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: Lato;
+  src: url(../font/Lato-Regular.ttf);
+}
+input {
+  outline: none;
+}
+body {
+  font-family: Lato;
+  max-width: 1920px;
+  margin: auto;
+}
+.header {
+  background-image: url("../images/bg-color-header.png");
+  background-position: center center;
+}
+.header-icon-call {
+  color: #e57709;
+  background: #ffffff;
+  border-radius: 50%;
+}
+.header-call {
+  background-image: linear-gradient(to top, #ffb469, #e57709);
+  border-radius: 20px;
+  color: #ffffff;
+  box-shadow: 0px 8px 16px 0px rgba(229, 119, 9, 0.35);
+}
+.consultation {
+  background: linear-gradient(180deg, #ffb469 0%, #e57709 100%);
+  color: #ffffff;
+}
+.header_menu-list-items {
+  color: #252525;
+}
+.header_menu-list-items:hover {
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.main {
+  max-width: 1920px;
+}
+.section-title,
+.section-title hr {
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.section-title hr {
+  color: #0a9949;
+  width: 69px;
+  height: 1px;
+}
+.text-intro {
+  color: #454545;
+}
+.consultation:nth-child(2) {
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+}
+.advantage-list-items img {
+  padding: 13px 12px 12px 13px;
+  background: linear-gradient(135deg, #16a085 0%, #f4d03f 100%);
+  border-radius: 20px;
+}
+.advantage-list-items p {
+  color: #454545;
+}
+.btn-arrow {
+  border: 1px solid #3eed8b;
+  border-radius: 50%;
+  color: #3eed8b;
+}
+.ask {
+  background-image: url("../images/bg-color-ask.png");
+  background-position: center center;
+}
+.ask-list-items {
+  background: #eef5f2;
+  border-radius: 5px;
+  margin: 16px 0;
+}
+.fa-plus {
+  padding: 6px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(135deg, #3eed8b 0%, #0a9949 100%);
+}
+.price_list {
+  background-image: url("../images/bg-price.png");
+}
+.discount-items {
+  background: #edf7f2;
+  transition: 0.7s ease-in-out;
+}
+.discount-items:hover {
+  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
+}
+.value-discount {
+  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.discount-items:hover .value-discount {
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.discount-items:hover .discount-title {
+  color: #ffffff;
+}
+.btn-signin {
+  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
+  color: #ffffff;
+}
+.discount-items:hover .btn-signin {
+  color: #16a085;
+  background: #ffffff;
+}
+.discount-items:hover .list-check-discount,
+.discount-items:hover .list-check-discount li i {
+  color: #ffffff;
+}
+.list-check-discount li i {
+  color: #0a9949;
+}
+.discount {
+  background-image: url(../images/bg-discount.png);
+  background-position: center center;
+}
+@media only screen and (max-width: 1024px) {
+  .discount-items {
+    width: calc(50% - 10px);
+  }
+}
+@media only screen and (max-width: 640px) {
+  .discount-items {
+    width: 100%;
+  }
+}
+.title-form-advise {
+  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
+  color: #ffffff;
+}
+.advise {
+  background: linear-gradient(
+    90deg,
+    rgba(22, 160, 133, 0.5) 0%,
+    rgba(244, 208, 63, 0.5) 100%
+  );
+  background-image: url(../images/bg-advise.png);
+  background-position: center center;
+}
+.title-advise {
+  font-family: "Allura", cursive;
+}
+
+.form-advise form {
+  background-color: #ffffff;
+}
+.form-advise form input {
+  background: #f5f5f5;
+  width: -webkit-fill-available;
+}
+.footer {
+    background: linear-gradient(90deg, #16A085 0%, #F4D03F 100%);
+
+}

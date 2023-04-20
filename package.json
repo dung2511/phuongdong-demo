@@ -1,0 +1,23 @@
+{
+  "name": "phuongdong-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dung2511/phuongdong-demo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dung2511/phuongdong-demo/issues"
+  },
+  "homepage": "https://github.com/dung2511/phuongdong-demo#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
