@@ -1492,6 +1492,10 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:m-4 {
+    margin: 1rem;
+  }
+
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -1610,6 +1614,10 @@ video {
     gap: 0.5rem;
   }
 
+  .lg\:p-4 {
+    padding: 1rem;
+  }
+
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -1664,6 +1672,11 @@ video {
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
@@ -1896,5 +1909,10 @@ video {
   .\34xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .\34xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
