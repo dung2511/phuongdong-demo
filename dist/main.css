@@ -115,3 +115,43 @@ body {
 .showans {
   display: block;
 }
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.whitespace-inital {
+  white-space: initial;
+}
+.d-flex {
+  display: flex !important;
+}
+.underline-from-center {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.underline-from-center::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 3px;
+  width: 0;
+  background-color: #3EED8B; 
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: center bottom;
+  border-radius: 5px;
+}
+
+.underline-from-center:hover::before {
+  width: 100%;
+  transform: translateX(-50%);
+}

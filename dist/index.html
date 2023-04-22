@@ -31,27 +31,28 @@
             <div class="logo lg:w-1/6 xl:w-fit "><a class="w-full block" href="#"><img src="../images/logo.png"
                         alt=""></a>
             </div>
-            <ul id="header_menu" class="header_menu font-bold hidden lg:flex lg:gap-2 xl:gap-4 4xl:gap-8">
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700"
-                        href="#">Giới
+            <ul id="header_menu"
+                class="header_menu hidden ease-in-out duration-300 font-bold absolute top-0 left-0 h-full bg-white lg:bg-inherit lg:p-0 lg:static lg:flex lg:gap-2 xl:gap-4 4xl:gap-8">
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center "><a
+                        class="hover:text-green-500 ease-in-out duration-700" href="#">Giới
                         Thiệu</a></li>
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700 "
-                        href="#">Đối
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Đối
                         tượng khách hàng</a></li>
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700 "
-                        href="#">Quy
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Quy
                         trình</a></li>
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700 "
-                        href="#">Bảng giá</a></li>
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700 "
-                        href="#">Cảm
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Bảng giá</a></li>
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Cảm
                         nhận của khách hàng</a>
                 </li>
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700 "
-                        href="#">Đội
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Đội
                         ngũ bác sĩ</a></li>
-                <li class="lg:text-xs xl:text-sm text-black"><a class="hover:text-green-500 ease-in-out duration-700 "
-                        href="#">Hình ảnh & Video</a></li>
+                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Hình ảnh & Video</a></li>
             </ul>
             <a class="box-shadow-btn header-call text-white flex items-center gap-1 rounded-full p-1.5 sm:rounded-3xl bg-gradient-to-r from-orange-400 to-orange-500"
                 href="tel:19001806"><span class=" bg-white flex text-orange-500 rounded-full p-1"><i
@@ -125,8 +126,7 @@
                 </div>
             </div>
         </section>
-        <section
-            class="advantage mt-10 px-2.5 xl:pr-0  4xl:pr-44 pl-2.5 xl:pl-5 2xl:pl-32 lg:mt-10 2xl:mt-12 4xl:mt-20">
+        <section class="advantage mt-10 px-2.5 xl:pr-0 pl-2.5 xl:pl-5 2xl:pl-32 lg:mt-10 2xl:mt-12 4xl:mt-20">
             <div class="title">
                 <h2 class=" font-bold text-2xl  2xl:text-3xl   pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16"> Ưu Điểm
@@ -221,19 +221,29 @@
                     href="#"><img src="../images/calender.png" alt=""> Đăng
                     ký tư
                     vấn</a>
-
+                <div class="flex justify-center md:justify-start gap-4 my-4">
+                    <button onclick="plusSlides(-1)"
+                        class="p-1.5 w-9 bg-white hover:bg-green-500 hover:text-white ease-in-out duration-500 text-green-500 border-green-500 border-2 rounded-full active:bg-green-500 h-9 flex items-center justify-center">
+                        <i class="fa-solid flex items-center fa-arrow-left"></i>
+                    </button>
+                    <button onclick="plusSlides(1)"
+                        class=" bg-white hover:bg-green-500 hover:text-white ease-in-out duration-500 text-green-500 border-green-500 border-2 rounded-full active:bg-green-500 p-1.5 w-9 h-9 flex items-center justify-center">
+                        <i class="fa-solid flex items-center fa-arrow-right"></i>
+                    </button>
+                </div>
             </div>
-            <div class="md:w-3/5 w-full 4xl:w-1/2 ">
-                <swiper-container class="mySwiper" navigation="true">
-                    <swiper-slide> <img class="w-full" src="../images/img-sec.png" alt=""></swiper-slide>
-                    <swiper-slide><img class="w-full" src="../images/img-sec.png" alt=""></swiper-slide>
-                    <swiper-slide> <img class="w-full" src="../images/img-sec.png" alt=""></swiper-slide>
-                    <swiper-slide> <img class="w-full" src="../images/img-sec.png" alt=""></swiper-slide>
-                </swiper-container>
-
-
-
-
+            <div class="md:w-3/5 w-full 4xl:w-1/2 slideshow-container">
+                <div class="mySlides fade">
+                    <img class="w-full" src="../images/img-sec.png" alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img class="w-full" src="https://hongngochospital.vn/wp-content/uploads/2020/11/NDA05166.jpg"
+                        alt="">
+                </div>
+                <div class="mySlides fade">
+                    <img class="w-full"
+                        src="https://hongngochospital.vn/wp-content/uploads/2020/05/kham-nhi-tai-nha.jpg" alt="">
+                </div>
             </div>
         </section>
         <section
@@ -248,10 +258,11 @@
                 </h3>
                 <ul class="ask-list">
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3  hidden answer rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
                             chuyên
@@ -263,10 +274,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -278,10 +290,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -293,10 +306,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -308,10 +322,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -323,10 +338,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -338,10 +354,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -353,10 +370,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -368,10 +386,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 text-sm xl:text-lg 2xl:text-xl hidden answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -383,10 +402,11 @@
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
                     <li class="ask-list-items my-4 rounded-md  ">
-                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3">
+                        <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus"></i>
+                                không? </p> <i
+                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
                         </div>
                         <p class="mt-2 p-3 text-sm xl:text-lg 2xl:text-xl hidden answer rounded-md bg-slate-200">Khám
                             thai và tư vấn thai kỳ với chuyên
@@ -403,7 +423,7 @@
         </section>
         <section
             class="price_list md:flex md:items-center mt-10 lg:mt-14 mx-auto gap-2 h-fit px-2.5 pt-2.5 2xl:px-44 sm:px-4 4xl:px-64">
-            <div class="w-full mb-3 md:mb-0">
+            <div class="w-full md:w-1/2 mb-3 md:mb-0">
                 <h2 class="font-bold text-2xl  2xl:text-3xl   pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16"> Bảng giá
                 </h2>
@@ -436,26 +456,27 @@
                                 class="fa-regular fa-paper-plane"></i></span> <span>Gửi
                             Thông Tin</span></button>
                 </form>
-                <!-- <div class="flex gap-4 my-4">
-                    <button
-                        class="p-1.5 w-9 bg-white text-green-500 border-green-500 border-2 rounded-full  h-9 flex items-center justify-center">
+                <div class="flex justify-center md:justify-start gap-4 my-4">
+                    <button onclick="plusSlide(-1)"
+                        class="p-1.5 w-9 bg-white hover:bg-green-500 hover:text-white ease-in-out duration-500 text-green-500 border-green-500 border-2 rounded-full active:bg-green-500 h-9 flex items-center justify-center">
                         <i class="fa-solid flex items-center fa-arrow-left"></i>
                     </button>
-                    <button
-                        class=" bg-white text-green-500 border-green-500 border-2 rounded-full p-1.5 w-9 h-9 flex items-center justify-center">
+                    <button onclick="plusSlide(1)"
+                        class=" bg-white hover:bg-green-500 hover:text-white ease-in-out duration-500 text-green-500 border-green-500 border-2 rounded-full active:bg-green-500 p-1.5 w-9 h-9 flex items-center justify-center">
                         <i class="fa-solid flex items-center fa-arrow-right"></i>
                     </button>
-                </div> -->
+                </div>
             </div>
-            <div class="w-full md:w-1/2">
-                <swiper-container class="mySwiper" navigation="true">
-                    <swiper-slide><img src="../images/img-list-price.jpg" alt=""></swiper-slide>
-                    <swiper-slide><img src="../images/img-list-price.jpg" alt=""></swiper-slide><swiper-slide><img
-                            src="../images/img-list-price.jpg" alt=""></swiper-slide><swiper-slide><img
-                            src="../images/img-list-price.jpg" alt=""></swiper-slide>
-                </swiper-container>
-
-
+            <div class="w-full md:w-1/2 slideshow-container">
+                <div class="mySlide fade">
+                    <img class="w-full" src="../images/img-list-price.jpg" alt="">
+                </div>
+                <div class="mySlide fade">
+                    <img class="w-full" src="../images/img-list-price.jpg" alt="">
+                </div>
+                <div class="mySlide fade">
+                    <img class="w-full" src="../images/img-list-price.jpg" alt="">
+                </div>
             </div>
         </section>
         <section class="discount mt-10 lg:mt-14 mx-auto gap-2 h-fit px-2.5 pt-2.5 2xl:px-44 sm:px-4 4xl:px-64">
@@ -466,11 +487,14 @@
                 <h3 class="text-2xl  2xl:text-4xl mb-6 text-intro font-bold"> Chương trình ưu đãi đặc biệt dành cho
                     gói Khám bệnh tại nhà</h3>
             </div>
-            <div class="discount_slide_list flex  lg:flex-nowrap  sm:gap-2 md:gap-2 lg:gap-6 mt-6">
-                <div class="discount-items lg:w-1/3 items-center p-3 rounded-3xl ">
+            <div
+                class="discount_slide_list scroll-smooth flex whitespace-nowrap overflow-hidden gap-2 lg:flex-nowrap  4xl:gap-6 mt-6">
+                <div
+                    class="discount-items cursor-pointer flex flex-col w-full md:w-1/2 lg:w-1/3  items-center p-3 rounded-3xl ">
                     <img src="../images/img-discount.png" alt="">
-                    <div class="">
-                        <h4 class="font-bold  text-lg lg:text-xl pt-6 pb-2 text-center discount-title">
+                    <div class="px-10 lg:px-5">
+                        <h4
+                            class="font-bold whitespace-inital 4xl:text-2xl text-base lg:text-xl pt-6 pb-2 text-center discount-title">
                             Ưu đãi
                             dịch
                             vụ
@@ -479,25 +503,29 @@
                             người trên 60
                             tuổi</h4>
                     </div>
-                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount">Giảm ngay <span
-                            class="lg:text-5xl">40%</span></h4>
+                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount pb-6">Giảm ngay <span
+                            class="text-3xl lg:text-5xl">40%</span></h4>
                     <div class="flex justify-center">
-                        <ul class="lg:py-6 list-check-discount text-center">
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                        <ul class="lg:py-6 list-check-discount text-left">
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi từ
                                     01/08 -
                                     31/08/2022</span></li>
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi dành
                                     cho
                                     bán kính 10km</span></li>
-                            <li class=" flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class=" flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình ưu đãi dành
                                     cho
                                     Gia đình 4 người</span></li>
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi dành
                                     cho
@@ -507,10 +535,12 @@
                     <div class="flex justify-center "> <button class="rounded-xl text-base btn-signin py-3 px-2">Đăng ký
                             ngay</button></div>
                 </div>
-                <div class="discount-items lg:w-1/3 items-center p-3 rounded-3xl ">
+                <div
+                    class="discount-items cursor-pointer flex flex-col w-full md:w-1/2 lg:w-1/3  items-center p-3 rounded-3xl ">
                     <img src="../images/img-discount.png" alt="">
-                    <div class="">
-                        <h4 class="font-bold  text-lg lg:text-xl pt-6 pb-2 text-center discount-title">
+                    <div class="px-10 lg:px-5">
+                        <h4
+                            class="font-bold whitespace-inital 4xl:text-2xl text-base lg:text-xl pt-6 pb-2 text-center discount-title">
                             Ưu đãi
                             dịch
                             vụ
@@ -519,25 +549,29 @@
                             người trên 60
                             tuổi</h4>
                     </div>
-                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount">Giảm ngay <span
-                            class="lg:text-5xl">40%</span></h4>
+                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount pb-6">Giảm ngay <span
+                            class="text-3xl lg:text-5xl">40%</span></h4>
                     <div class="flex justify-center">
-                        <ul class="lg:py-6 list-check-discount text-center">
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                        <ul class="lg:py-6 list-check-discount text-left">
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi từ
                                     01/08 -
                                     31/08/2022</span></li>
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi dành
                                     cho
                                     bán kính 10km</span></li>
-                            <li class=" flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class=" flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình ưu đãi dành
                                     cho
                                     Gia đình 4 người</span></li>
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi dành
                                     cho
@@ -547,10 +581,12 @@
                     <div class="flex justify-center "> <button class="rounded-xl text-base btn-signin py-3 px-2">Đăng ký
                             ngay</button></div>
                 </div>
-                <div class="discount-items lg:w-1/3 items-center p-3 rounded-3xl ">
+                <div
+                    class="discount-items cursor-pointer flex flex-col w-full md:w-1/2 lg:w-1/3  items-center p-3 rounded-3xl ">
                     <img src="../images/img-discount.png" alt="">
-                    <div class="">
-                        <h4 class="font-bold  text-lg lg:text-xl pt-6 pb-2 text-center discount-title">
+                    <div class="px-10 lg:px-5">
+                        <h4
+                            class="font-bold whitespace-inital 4xl:text-2xl text-base lg:text-xl pt-6 pb-2 text-center discount-title">
                             Ưu đãi
                             dịch
                             vụ
@@ -559,25 +595,29 @@
                             người trên 60
                             tuổi</h4>
                     </div>
-                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount">Giảm ngay <span
-                            class="lg:text-5xl">40%</span></h4>
+                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount pb-6">Giảm ngay <span
+                            class="text-3xl lg:text-5xl">40%</span></h4>
                     <div class="flex justify-center">
-                        <ul class="lg:py-6 list-check-discount text-center">
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                        <ul class="lg:py-6 list-check-discount text-left">
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi từ
                                     01/08 -
                                     31/08/2022</span></li>
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi dành
                                     cho
                                     bán kính 10km</span></li>
-                            <li class=" flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class=" flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình ưu đãi dành
                                     cho
                                     Gia đình 4 người</span></li>
-                            <li class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i><span>Chương
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
                                     trình
                                     ưu đãi dành
                                     cho
@@ -587,19 +627,66 @@
                     <div class="flex justify-center "> <button class="rounded-xl text-base btn-signin py-3 px-2">Đăng ký
                             ngay</button></div>
                 </div>
+                <!-- <div class="discount-items cursor-pointer flex flex-col w-full md:w-1/2 lg:w-1/3  items-center p-3 rounded-3xl ">
+                    <img src="../images/img-discount.png" alt="">
+                    <div class="px-10 lg:px-5">
+                        <h4
+                            class="font-bold whitespace-inital 4xl:text-2xl text-base lg:text-xl pt-6 pb-2 text-center discount-title">
+                            Ưu đãi
+                            dịch
+                            vụ
+                            Khám bệnh tại nhà
+                            cho
+                            người trên 60
+                            tuổi</h4>
+                    </div>
+                    <h4 class="font-bold text-lg lg:text-xl text-center value-discount pb-6">Giảm ngay <span
+                            class="text-3xl lg:text-5xl">40%</span></h4>
+                    <div class="flex justify-center">
+                        <ul class="lg:py-6 list-check-discount text-left">
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
+                                    trình
+                                    ưu đãi từ
+                                    01/08 -
+                                    31/08/2022</span></li>
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
+                                    trình
+                                    ưu đãi dành
+                                    cho
+                                    bán kính 10km</span></li>
+                            <li class=" flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
+                                    trình ưu đãi dành
+                                    cho
+                                    Gia đình 4 người</span></li>
+                            <li class="flex gap-2 items-center pb-4 text-xs"><i
+                                    class="fa-regular fa-circle-check"></i><span>Chương
+                                    trình
+                                    ưu đãi dành
+                                    cho
+                                    Gia đình 4 người</span></li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center "> <button class="rounded-xl text-base btn-signin py-3 px-2">Đăng ký
+                            ngay</button></div>
+                </div> -->
             </div>
-            <div class="arrow flex gap-4 my-4">
-                <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+            <div class="flex justify-center  gap-4 my-4">
+                <button onclick="plusSlide(-1)" id="btn-arrowItems-left"
+                    class="p-1.5 w-9 btn-arrowItems bg-white hover:bg-green-500 hover:text-white ease-in-out duration-500 text-green-500 border-green-500 border-2 rounded-full active:bg-green-500 h-9 flex items-center justify-center">
                     <i class="fa-solid flex items-center fa-arrow-left"></i>
                 </button>
-                <button class="btn-arrow p-1.5 w-9 h-9 flex items-center justify-center">
+                <button onclick="plusSlide(1)" id="btn-arrowItems-right"
+                    class=" bg-white btn-arrowItems hover:bg-green-500 hover:text-white ease-in-out duration-500 text-green-500 border-green-500 border-2 rounded-full active:bg-green-500 p-1.5 w-9 h-9 flex items-center justify-center">
                     <i class="fa-solid flex items-center fa-arrow-right"></i>
                 </button>
             </div>
         </section>
         <section
             class="advise flex items-center flex-wrap sm:justify-between mt-10 lg:mt-14 mx-auto gap-2 h-fit px-2.5 pt-2.5 2xl:px-44 sm:px-4 4xl:px-64">
-            <div class="title-advise w-full sm:w-2/5 py-3  text-black">
+            <div class="title-advise w-full sm:w-5/12 py-3  text-black">
                 <h2 class="text-2xl lg:text-3xl  4xl:text-5xl  2xl:text-4xl ">
                     Chúng tôi luôn tin tưởng rằng
                 </h2>
@@ -608,17 +695,19 @@
                 </h2>
             </div>
             <div class="form-advise rounded-2xl sm:w-1/2 my-6 lg:my-12">
-                <div class="title-form-advise text-center  p-4">
+                <div class="title-form-advise text-center rounded-t-2xl p-4">
                     <h2 class="md:text-xl font-bold pb-1">Đăng Ký Tư Vấn Miễn Phí</h2>
                     <p class="font-semibold md:text-sm">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
                         thời!</p>
                 </div>
-                <form action="" class="  md:p-8">
-                    <input class="rounded-md m-4 p-4" placeholder="Họ Tên (*)" type="text">
-                    <input class="rounded-md m-4 p-4" type="tel" placeholder="Số Điện Thoại(*)">
-                    <input class="rounded-md m-4 p-4" type="email" placeholder="E-mail">
-                    <input class="rounded-md m-4 p-4" type="text" placeholder="Nội Dung">
-                    <div class="flex justify-center my-2">
+                <form action="" class="rounded-b-2xl p-2  md:p-4">
+                    <input class="rounded-md m-2 lg:m-3 2xl:m-4 p-2 lg:p-3 2xl:p-4" placeholder="Họ Tên (*)"
+                        type="text">
+                    <input class="rounded-md m-2 lg:m-3 2xl:m-4 p-2 lg:p-3 2xl:p-4" type="tel"
+                        placeholder="Số Điện Thoại(*)">
+                    <input class="rounded-md m-2 lg:m-3 2xl:m-4 p-2 lg:p-3 2xl:p-4" type="email" placeholder="E-mail">
+                    <input class="rounded-md m-2 lg:m-3 2xl:m-4 p-2 lg:p-3 2xl:p-4" type="text" placeholder="Nội Dung">
+                    <div class="flex justify-center p-2">
                         <button type="button"
                             class="text-white box-shadow-btn bg-gradient-to-r items-center from-orange-400 to-orange-500 flex w-max gap-2 py-3 px-6 text-xs xs:text-sm md:text-base rounded-3xl"><img
                                 src="../images/calender.png" alt=""> Đăng
@@ -629,46 +718,53 @@
             </div>
         </section>
     </main>
-    <footer class="footer container mx-auto h-fit xs:px-2.5 xs:pt-2.5 sm:px-4 sm:pt-4 2xl:px-44">
+    <footer class="footer container mx-auto h-fit px-2.5 pt-2.5 xl:px-5 xl:pt-5 2xl:px-32 2xl:pt-5 4xl:px-64 pb-2.5">
         <div class="logo-footer my-6">
             <img src="../images/logo.png" alt="">
         </div>
-        <div class="list-footer flex gap-8 justify-between text-white">
-            <div class="">
-                <h2>BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
+        <div class="list-footer flex-wrap lg:flex-nowrap flex gap-8 justify-between text-white">
+            <div class="w-full md:w-6/12 lg:w-1/3">
+                <h2 class="text-lg  2xl:text-xl mb-4 ">BỆNH VIỆN ĐA KHOA PHƯƠNG ĐÔNG</h2>
                 <ul class="address">
-                    <li class="w-full">Địa chỉ: Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ Liêm, HN</li>
-                    <li class="w-full">Email: bvphuongdong@phuongdonghospital.vn</li>
-                    <li class="w-full"><a href="tel:19001806">Hotline: 1900 1806</a></li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg">Địa chỉ: Số 9, Phố Viên, P. Cổ Nhuế 2, Q. Bắc Từ
+                        Liêm, HN</li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg">Email: bvphuongdong@phuongdonghospital.vn</li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg"><a href="tel:19001806">Hotline: 1900 1806</a>
+                    </li>
                 </ul>
             </div>
-            <div class=" ">
-                <h2>Thời gian mở cửa</h2>
+            <div class="w-full md:w-5/12 lg:w-1/4">
+                <h2 class="text-lg  2xl:text-xl mb-4 ">Thời gian mở cửa</h2>
                 <ul class="time">
-                    <li class="w-full">Thứ 2 - Chủ nhật : 07:30 -19:00</li>
-                    <li class="w-full">Cấp cứu 24/7: 0833 015 115</li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg">Thứ 2 - Chủ nhật : 07:30 -19:00</li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg">Cấp cứu 24/7: 0833 015 115</li>
                 </ul>
             </div>
-            <div class=" ">
-                <h2>Liên hệ</h2>
+            <div class="w-full md:w-5/12 lg:w-1/4">
+                <h2 class="text-lg 2xl:text-xl mb-4 ">Liên hệ</h2>
                 <ul class="contact">
-                    <li class="w-full"><a href="tel:0911615115">Hotline Tiêm chủng: 0911 615 115 </a></li>
-                    <li class="w-full"><a href="tel:0911615115">Hotline Khoa sản : 0911 615 115</a></li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg"><a href="tel:0911615115">Hotline Tiêm chủng:
+                            0911 615 115 </a></li>
+                    <li class="w-full text-sm xl:text-base 4xl:text-lg"><a href="tel:0911615115">Hotline Khoa sản : 0911
+                            615 115</a></li>
                 </ul>
             </div>
-            <div class=" ">
-                <h2>Mạng xã hội</h2>
-                <ul class="socialnetwork flex pt-2 gap-2">
-                    <li class="w-full"><a href="#"><img src="../images/bi_facebook.png" alt=""></a></li>
-                    <li class="w-full"><a href="#"><img src="../images/twitter.png" alt=""></a></li>
-                    <li class="w-full"><a href="#"><img src="../images/youtube.png" alt=""></a></li>
-                    <li class="w-full"><a href="#"><img src="../images/instagam.png" alt=""></a></li>
+            <div class="w-full md:w-5/12 lg:w-1/6">
+                <h2 class="text-lg  2xl:text-xl mb-4 ">Mạng xã hội</h2>
+                <ul class="socialnetwork flex gap-5">
+                    <li class="hover:bg-green-500 text-sm xl:text-base 4xl:text-lg"><a href="#"><img
+                                src="../images/bi_facebook.png" alt=""></a></li>
+                    <li class="hover:bg-green-500 text-sm xl:text-base 4xl:text-lg"><a href="#"><img
+                                src="../images/twitter.png" alt=""></a></li>
+                    <li class="hover:bg-green-500 text-sm xl:text-base 4xl:text-lg"><a href="#"><img
+                                src="../images/youtube.png" alt=""></a></li>
+                    <li class="hover:bg-green-500 text-sm xl:text-base 4xl:text-lg"><a href="#"><img
+                                src="../images/instagam.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="app.js"> </script>
+    <script src="app.js" defer> </script>
 </body>
 
 </html>
