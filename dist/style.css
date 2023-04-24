@@ -1559,6 +1559,10 @@ video {
     margin-top: 9rem;
   }
 
+  .\32xl\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
+
   .\32xl\:gap-14 {
     gap: 3.5rem;
   }
@@ -1633,6 +1637,10 @@ video {
 @media (min-width: 1920px) {
   .\34xl\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .\34xl\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .\34xl\:w-1\/2 {
