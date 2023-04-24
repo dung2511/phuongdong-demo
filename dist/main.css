@@ -17,29 +17,6 @@ body {
 .advantage {
   background-image: url(../images/bg-advantage.png);
 }
-/* .header_menu_show {
-  transition: 0.4s;
-  color: #fff;
-  background-color: rgba(255, 223, 223, 0.9);
-  position: absolute;
-  text-align: center;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 100%;
-  overflow-x: hidden;
-  position: fixed;
-} */
-#close-menu {
-  background-color: rgba(0, 0, 0, 0.387);
-  bottom: 0;
-  display: none;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 100;
-}
 .ask {
   background-image: url("../images/bg-color-ask.png");
   background-position: center center;
@@ -51,11 +28,11 @@ body {
   background-image: url("../images/bg-price.png");
 }
 .discount-items {
-  background: #edf7f2;
+  background: #edf7f2 !important;
   transition: 0.7s ease-in-out;
 }
 .discount-items:hover {
-  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
+  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%) !important;
 }
 .value-discount {
   color: #0a9949;
@@ -135,7 +112,6 @@ body {
 }
 .underline-from-center {
   position: relative;
-  display: inline-block;
   padding-bottom: 5px;
 }
 .underline-from-center::before {
@@ -145,7 +121,7 @@ body {
   left: 50%;
   height: 3px;
   width: 0;
-  background-color: #3EED8B; 
+  background-color: #3eed8b;
   transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
   transform-origin: center bottom;
   border-radius: 5px;
