@@ -44,7 +44,7 @@ const swiper_3 = new Swiper(".mySwiper-discount", {
   },
   breakpoints: {
     640: {
-      slidesPerView: 1.5,
+      slidesPerView: 2,
     },
     1024: {
       slidesPerView: 3,
