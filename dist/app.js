@@ -24,6 +24,10 @@ import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.brow
 
 const swiper_1 = new Swiper(".mySwiper-img", {
   loop: true,
+  pagination: {
+    el: ".slider__pagination__img",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".button-next-img",
     prevEl: ".button-prev-img",
@@ -31,6 +35,10 @@ const swiper_1 = new Swiper(".mySwiper-img", {
 });
 const swiper_2 = new Swiper(".mySwiper-price", {
   loop: true,
+  pagination: {
+    el: ".slider__pagination__price",
+    clickable: true,
+  },
   navigation: {
     nextEl: ".button-next-price",
     prevEl: ".button-prev-price",
@@ -42,6 +50,7 @@ const swiper_3 = new Swiper(".mySwiper-discount", {
     nextEl: ".button-next-discount",
     prevEl: ".button-prev-discount",
   },
+
   breakpoints: {
     640: {
       slidesPerView: 2,

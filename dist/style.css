@@ -863,8 +863,104 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\1B0\] {
+  background-color: ư;
+}
+
+.bg-\[\1EEDl\] {
+  background-color: ửl;
+}
+
+.bg-\[\1EED\] {
+  background-color: ử;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[url\] {
+  background-color: url;
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\)\] {
+  background-image: url();
+}
+
+.bg-\[url\(\{\}\)\] {
+  background-image: url({});
+}
+
+.bg-\[url\(\(\)\)\] {
+  background-image: url(());
+}
+
+.bg-\[url\(\"\"\)\] {
+  background-image: url("");
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\/\'\)\] {
+  background-image: url('./');
+}
+
+.bg-\[url\(\'\.\'\)\] {
+  background-image: url('.');
+}
+
+.bg-\[url\(\'\.\.\'\)\] {
+  background-image: url('..');
+}
+
+.bg-\[url\(\'\.\.\/\'\)\] {
+  background-image: url('../');
+}
+
+.bg-\[url\(\'\.\.\/images\/\'\)\] {
+  background-image: url('../images/');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg\'\)\] {
+  background-image: url('../images/bg');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-color-header\.png\'\)\] {
+  background-image: url('../images/bg-color-header.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-intro\.png\'\)\] {
+  background-image: url('../images/bg-intro.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-advantage\.png\'\)\] {
+  background-image: url('../images/bg-advantage.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-color-ask\.png\'\)\] {
+  background-image: url('../images/bg-color-ask.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-price\.png\'\)\] {
+  background-image: url('../images/bg-price.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/\.\.\/images\/bg-discount\.png\'\)\] {
+  background-image: url('../images/../images/bg-discount.png');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-advise\.png\'\)\] {
+  background-image: url('../images/bg-advise.png');
+}
+
+.bg-\[url\(\'\.\.\/bg-footer\.png\'\)\] {
+  background-image: url('../bg-footer.png');
 }
 
 .from-cyan-400 {
@@ -891,6 +987,14 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-purple-500 {
+  --tw-gradient-from: #a855f7 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(168 85 247 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-green-500 {
   --tw-gradient-to: #22c55e var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
@@ -899,6 +1003,15 @@ video {
 .to-orange-500 {
   --tw-gradient-to: #f97316 var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
+}
+
+.to-pink-500 {
+  --tw-gradient-to: #ec4899 var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-1 {
@@ -1075,6 +1188,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-2xl {
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1132,6 +1259,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -1333,6 +1464,10 @@ video {
 
   .lg\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .lg\:mt-4 {
+    margin-top: 1rem;
   }
 
   .lg\:block {
@@ -1540,6 +1675,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .\32xl\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .\32xl\:gap-14 {
     gap: 3.5rem;
   }
@@ -1628,6 +1767,10 @@ video {
 
   .\34xl\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .\34xl\:mt-8 {
+    margin-top: 2rem;
   }
 
   .\34xl\:w-1\/2 {

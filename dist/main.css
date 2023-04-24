@@ -13,72 +13,43 @@ body {
   scroll-behavior: smooth;
   font-family: "Lato", sans-serif;
 }
-.header {
-  background-image: url("../images/bg-color-header.png");
-}
-.introduce {
-  background-image: url(../images/bg-intro.png);
-}
-.advantage {
-  background-image: url(../images/bg-advantage.png);
-}
-.ask {
-  background-image: url("../images/bg-color-ask.png");
-  background-position: center center;
-}
 .box-shadow-btn {
   box-shadow: 0px 8px 16px rgba(229, 119, 9, 0.35);
-}
-.price_list {
-  background-image: url("../images/bg-price.png");
 }
 .discount-items {
   background: #edf7f2 !important;
   transition: 0.7s ease-in-out;
 }
-.discount-items:hover {
+.discount-items:active {
   background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%) !important;
 }
 .value-discount {
   color: #0a9949;
 }
-.discount-items:hover .value-discount {
+.discount-items:active .value-discount {
   color: #ffffff;
 }
-.discount-items:hover .discount-title {
+.discount-items:active .discount-title {
   color: #ffffff;
 }
 .btn-signin {
   background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
   color: #ffffff;
 }
-.discount-items:hover .btn-signin {
+.discount-items:active .btn-signin {
   color: #16a085;
   background: #ffffff;
 }
-.discount-items:hover .list-check-discount,
-.discount-items:hover .list-check-discount li i {
+.discount-items:active .list-check-discount,
+.discount-items:active .list-check-discount li i {
   color: #ffffff;
 }
 .list-check-discount li i {
   color: #0a9949;
 }
-.discount {
-  background-image: url(../images/bg-discount.png);
-  background-position: right center;
-}
 .title-form-advise {
   background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
   color: #ffffff;
-}
-.advise {
-  background: linear-gradient(
-    90deg,
-    rgba(22, 160, 133, 0.5) 0%,
-    rgba(244, 208, 63, 0.5) 100%
-  );
-  background-image: url(../images/bg-advise.png);
-  background-position: center center;
 }
 .title-advise {
   font-family: "Allura", cursive;
@@ -90,12 +61,6 @@ body {
 .form-advise form input {
   background: #f5f5f5;
   width: -webkit-fill-available;
-}
-.footer {
-  background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
-}
-.showans {
-  display: block;
 }
 .fade {
   animation-name: fade;
@@ -136,4 +101,6 @@ body {
   width: 100%;
   transform: translateX(-50%);
 }
-
+.swiper-pagination-bullet-active {
+  width: 12px;
+}
