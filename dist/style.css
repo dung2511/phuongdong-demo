@@ -700,6 +700,34 @@ video {
   width: max-content;
 }
 
+@keyframes ansDown {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-ansDown {
+  animation: ansDown 0.4s ease-in-out;
+}
+
+@keyframes growDown {
+   0%  {
+    left: -256px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.animate-growDown {
+  animation: growDown 0.4s ease-in-out;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -952,14 +980,14 @@ video {
   padding-bottom: 0.625rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .pb-1 {
@@ -1118,10 +1146,6 @@ video {
 }
 
 @media (min-width: 480px) {
-  .xs\:mt-20 {
-    margin-top: 5rem;
-  }
-
   .xs\:w-8\/12 {
     width: 66.666667%;
   }
@@ -1278,10 +1302,6 @@ video {
     padding-right: 0px;
   }
 
-  .md\:pt-20 {
-    padding-top: 5rem;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -1319,11 +1339,6 @@ video {
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
-  }
-
-  .lg\:my-28 {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
   }
 
   .lg\:mb-0 {
@@ -1435,24 +1450,14 @@ video {
     padding-right: 1.25rem;
   }
 
-  .lg\:py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
-
-  .lg\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
-  .lg\:py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
   .lg\:py-28 {
     padding-top: 7rem;
     padding-bottom: 7rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .lg\:pb-1 {
@@ -1609,11 +1614,6 @@ video {
     padding-right: 1.5rem;
   }
 
-  .\32xl\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
   .\32xl\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -1621,10 +1621,6 @@ video {
 
   .\32xl\:pl-32 {
     padding-left: 8rem;
-  }
-
-  .\32xl\:pl-44 {
-    padding-left: 11rem;
   }
 
   .\32xl\:pr-32 {
@@ -1705,16 +1701,12 @@ video {
     padding-bottom: 12rem;
   }
 
-  .\34xl\:pr-44 {
-    padding-right: 11rem;
+  .\34xl\:pl-64 {
+    padding-left: 16rem;
   }
 
   .\34xl\:pr-64 {
     padding-right: 16rem;
-  }
-
-  .\34xl\:pl-64 {
-    padding-left: 16rem;
   }
 
   .\34xl\:text-2xl {
