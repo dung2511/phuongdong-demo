@@ -9,7 +9,7 @@ module.exports = {
       lg: "1024px",
       xl: "1280px",
       "2xl": "1440px",
-      "3xl": "15360px",
+      "3xl": "1536px",
       "4xl": "1920px",
     },
 
@@ -31,10 +31,29 @@ module.exports = {
             transform: "translateY(0)",
           },
         },
+        rotateAngle: {
+          "0%": {
+            transform: "rotate(0deg)",
+          },
+          "50%": { transform: "rotate(45deg)" },
+          "100%": {
+            transform: "rotate(90deg)",
+          },
+        },
+        list_items_menu: {
+          "0%": {
+            transform: "translateY(10%)",
+          },
+          "100%": {
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         growDown: "growDown 0.4s ease-in-out",
         ansDown: "ansDown 0.4s ease-in-out",
+        rotateAngle: "rotateAngle 0.7s ease-in-out",
+        list_items_menu: "list_items_menu 0.7s ease-in-out",
       },
     },
   },

@@ -17,6 +17,18 @@ questionTitles.forEach((title) => {
     }
   });
 });
+const list_menu_items = document.querySelector(".list-items");
+const angle_right = document.querySelector(".fa-angle-right");
+const list_items_menu = document.querySelector(".list-items-menu");
+list_menu_items.addEventListener("click", (e) => {
+  if (list_menu_items.contains(e.target)) {
+    list_items_menu.classList.toggle("hidden");
+    angle_right.classList.toggle("rotate-90");
+  } else if (list_menu_items.contains(e.target)) {
+    list_items_menu.classList.toggle("hidden");
+    angle_right.classList.toggle("rotate-90");
+  }
+});
 const hamburger = document.getElementById("hamburger");
 const closeMenu = document.getElementById("close-menu");
 const header_menu = document.getElementById("header_menu");
@@ -27,6 +39,7 @@ document.addEventListener("click", (e) => {
   } else if (closeMenu.contains(e.target)) {
     header_menu.classList.toggle("hidden");
     closeMenu.classList.toggle("hidden");
+   list_items_menu.classList.toggle("hidden");
   }
 });
 
@@ -56,11 +69,11 @@ const swiper_2 = new Swiper(".mySwiper-price", {
 });
 const swiper_3 = new Swiper(".mySwiper-discount", {
   slidesPerView: 1,
+  loop: true,
   navigation: {
     nextEl: ".button-next-discount",
     prevEl: ".button-prev-discount",
   },
-
   breakpoints: {
     640: {
       slidesPerView: 2,
