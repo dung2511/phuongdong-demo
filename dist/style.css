@@ -1709,6 +1709,14 @@ video {
     padding-right: 11rem;
   }
 
+  .\34xl\:pr-64 {
+    padding-right: 16rem;
+  }
+
+  .\34xl\:pl-64 {
+    padding-left: 16rem;
+  }
+
   .\34xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
