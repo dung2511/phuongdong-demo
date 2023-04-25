@@ -4,10 +4,16 @@ questionTitles.forEach((title) => {
   title.addEventListener("click", () => {
     const question = title.parentElement;
     const answer = question.querySelector(".answer");
+    const minus = question.querySelector(".minus");
+    const plus = question.querySelector(".plus");
     if (answer.style.display === "none") {
       answer.style.display = "block";
+      minus.style.display = "block";
+      plus.style.display = "none";
     } else {
       answer.style.display = "none";
+      minus.style.display = "none";
+      plus.style.display = "block";
     }
   });
 });
@@ -17,9 +23,13 @@ const header_menu = document.getElementById("header_menu");
 document.addEventListener("click", (e) => {
   if (hamburger.contains(e.target)) {
     header_menu.classList.toggle("hidden");
-  } else {
+    closeMenu.classList.toggle("hidden");
+  } else if (closeMenu.contains(e.target)) {
+    header_menu.classList.toggle("hidden");
+    closeMenu.classList.toggle("hidden");
   }
 });
+
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js";
 
 const swiper_1 = new Swiper(".mySwiper-img", {

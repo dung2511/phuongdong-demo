@@ -18,7 +18,7 @@
 
 <body>
     <header
-        class="header bg-[url('../images/bg-color-header.png')] mx-auto h-fit px-2.5 pt-2.5 xl:px-5 xl:pt-5 2xl:px-32 2xl:pt-5 4xl:px-64 container">
+        class="header bg-[url('../images/bg-color-header.png')] mx-auto h-fit px-2.5 pt-2.5 xl:px-5 xl:pt-5 2xl:px-32 2xl:pt-5 4xl:px-64">
 
         <div class="flex justify-between items-center lg:gap-3 ">
             <div id="hamburger" class="hampurger lg:hidden text-xl cursor-pointer">
@@ -28,27 +28,27 @@
                         alt=""></a>
             </div>
             <ul id="header_menu"
-                class="header_menu hidden text-sm md:text-base ease-in-out duration-300 absolute font-bold  text-center lg:text-left top-14 right-0 left-0 z-50 h-fit bg-white lg:bg-inherit lg:p-0 lg:static lg:flex lg:gap-2 xl:gap-4 4xl:gap-8">
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center "><a
-                        class="hover:text-green-500 ease-in-out duration-700" href="#">Giới
+                class="header_menu hidden text-sm w-64 lg:w-auto h-full md:text-base ease-in-out duration-700 fixed font-bold  text-left lg:text-left top-0 right-0 left-0 z-50  bg-white lg:bg-inherit lg:p-0 lg:static lg:flex  lg:gap-2 xl:gap-4 4xl:gap-8">
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center "><a
+                        class="hover:text-green-300 ease-in-out duration-700" href="#">Giới
                         Thiệu</a></li>
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
-                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Đối
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-300 ease-in-out duration-700 " href="#">Đối
                         tượng khách hàng</a></li>
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
-                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Quy
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-300 ease-in-out duration-700 " href="#">Quy
                         trình</a></li>
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
-                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Bảng giá</a></li>
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
-                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Cảm
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-300 ease-in-out duration-700 " href="#">Bảng giá</a></li>
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-300 ease-in-out duration-700 " href="#">Cảm
                         nhận của khách hàng</a>
                 </li>
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
-                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Đội
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-300 ease-in-out duration-700 " href="#">Đội
                         ngũ bác sĩ</a></li>
-                <li class="lg:text-xs xl:text-sm text-black mb-2 lg:mb-0 underline-from-center"><a
-                        class="hover:text-green-500 ease-in-out duration-700 " href="#">Hình ảnh & Video</a></li>
+                <li class="lg:text-xs xl:text-sm py-2.5 px-6 lg:p-0 text-black mb-2 lg:mb-0 underline-from-center"><a
+                        class="hover:text-green-300 ease-in-out duration-700 " href="#">Hình ảnh & Video</a></li>
             </ul>
             <a class="box-shadow-btn header-call text-white flex items-center gap-1 rounded-full p-1.5 sm:rounded-3xl bg-gradient-to-r from-orange-400 to-orange-500"
                 href="tel:19001806"><span class=" bg-white flex text-orange-500 rounded-full p-1"><i
@@ -81,8 +81,9 @@
                 <img src="../images/image-header.png" alt="">
             </div>
         </div>
+        <div id="close-menu" class="active fixed hidden top-0 left-0 right-0 bottom-0 z-30"></div>
     </header>
-    <main class="mt-14 mx-auto container">
+    <main class="mt-14 mx-auto">
         <section
             class="introduce bg-[url('../images/bg-intro.png')] flex items-center 2xl:gap-7 4xl:gap-14 4xl:pr-44 px-2.5 pt-2.5 xl:pr-5 xl:pl-0 xl:pt-5 2xl:pr-32 2xl:pt-5">
             <img class="hidden lg:w-1/2 lg:block" src="../images/intro-img.png" alt="">
@@ -90,20 +91,20 @@
                 <h2 class="font-bold text-2xl 2xl:text-3xl pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16"> Giới Thiệu
                 </h2>
-                <h3 class=" text-2xl 2xl:text-4xl mb-6 font-bold text-intro">
+                <h3 class=" text-2xl 2xl:text-4xl mb-6 font-bold ">
                     Tạo ra tâm lý thoải mái, hỗ trợ điều trị tích cực cho người bệnh
                 </h3>
-                <p class="2xl:text-xl xl:text-lg text-sm text-intro mb-4">Dịch vụ khám bệnh tại nhà có thể áp dụng với
+                <p class="2xl:text-xl xl:text-lg text-sm  mb-4">Dịch vụ khám bệnh tại nhà có thể áp dụng với
                     mọi đối tượng người bệnh, đặc biệt tiện lợi đối với những người gặp khó khăn khi di chuyển, người
                     già neo đơn, người khuyết tật, gia đình có trẻ nhỏ…
                 </p>
-                <p class="text-sm xl:text-lg 2xl:text-xl text-intro mb-4">
+                <p class="text-sm xl:text-lg 2xl:text-xl  mb-4">
                     Trẻ nhỏ, cũng như người già, là đối tượng rất dễ mắc bệnh do hệ miễn dịch chưa hoàn thiện, sức đề
                     kháng kém. Nhiều cha mẹ e ngại việc đưa trẻ đi khám chữa bệnh ở bệnh viện, trạm xá đông người vì sợ
                     lây nhiễm chéo. Giờ đây, với dịch vụ khám tại nhà, cha mẹ và bé không cần chịu đựng tình trạng quá
                     tải, đợi chờ để thăm khám hay mất nhiều thời gian và công sức di chuyển để chăm bé.
                 </p>
-                <p class="text-sm xl:text-lg 2xl:text-xl text-intro mb-4">Người cao tuổi dễ mắc các bệnh về cơ xương
+                <p class="text-sm xl:text-lg 2xl:text-xl  mb-4">Người cao tuổi dễ mắc các bệnh về cơ xương
                     khớp, huyết áp, tim mạch,
                     tiểu đường....
                     Đây là những
@@ -127,66 +128,70 @@
                 <h2 class=" font-bold text-2xl  2xl:text-3xl   pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16"> Ưu Điểm
                 </h2>
-                <h3 class="text-2xl  2xl:text-4xl mb-3 md:mb-6 font-bold text-intro"> Vì sao khách hàng nên lựa chọn
+                <h3 class="text-2xl  2xl:text-4xl mb-3 md:mb-6 font-bold "> Vì sao khách hàng nên lựa chọn
                     dịch vụ
                 </h3>
-                <h3 class="text-2xl  2xl:text-4xl mb-3 md:mb-6 font-bold text-intro"> Khám bệnh tại nhà của Bệnh viện
+                <h3 class="text-2xl  2xl:text-4xl mb-3 md:mb-6 font-bold "> Khám bệnh tại nhà của Bệnh viện
                     Phương
                     Đông?</h3>
             </div>
             <div class=" flex items-center 2xl:gap-9 4xl:gap-14">
                 <div class="w-full md:w-3/5">
                     <div class="advantage-list mt-6 md:mt-14">
-                        <div class="flex my-7 gap-10 flex-wrap md:flex-nowrap">
+                        <div class="flex my-7 gap-10 flex-wrap justify-center  md:flex-nowrap">
                             <div class="advantage-list-items ">
                                 <div class="flex justify-center mb-3 md:mb-6  md:block"> <img
-                                        class="bg-gradient-to-r from-cyan-400 to-green-500 p-3 rounded-2xl"
-                                        src="../images/frame-1-advantage.png" class="mb-6" alt=""></div>
+                                        class=" box-shadow-icon bg-gradient-to-r from-cyan-400 to-green-500 p-3 rounded-2xl"
+                                        src="../images/frame-1-advantage.png" alt=""></div>
                                 <h4 class="text-lg lg:text-xl md:text-left text-center font-semibold mb-3">Đội ngũ bác
                                     sĩ
                                     giàu y đức
                                 </h4>
-                                <p class="text-sm xl:text-lg 2xl:text-xl text-intro">Đội ngũ bác sĩ khám sàng lọc
+                                <p class="text-sm xl:text-lg 2xl:text-xl  text-center md:text-left">Đội ngũ
+                                    bác sĩ khám sàng lọc
                                     và tư
                                     vấn có trình độ chuyên môn cao, giàu kinh nghiệm, tư
                                     vấn tận tình.</p>
                             </div>
                             <div class="advantage-list-items md:mt-16 ">
                                 <div class="flex justify-center mb-3 md:mb-6 md:block"><img
-                                        class="bg-gradient-to-r from-cyan-400 to-green-500 p-3 rounded-2xl"
-                                        src="../images/frame-2-advantage.png" class="mb-6" alt=""></div>
+                                        class="bg-gradient-to-r from-cyan-400 to-green-500 p-3 box-shadow-icon rounded-2xl"
+                                        src="../images/frame-2-advantage.png" alt=""></div>
 
                                 <h4 class="text-xl md:text-left text-center font-semibold mb-3">Cảm giác thư thái, bình
                                     yên
                                 </h4>
-                                <p class="text-sm xl:text-lg 2xl:text-xl text-intro">Không gian bệnh viện theo mô
+                                <p class="text-sm xl:text-lg 2xl:text-xl  text-center md:text-left">Không gian
+                                    bệnh viện theo mô
                                     hình
                                     khách sạn hiện đại, khuôn viên rộng gần 10ha với hàng
                                     vạn cây xanh</p>
                             </div>
                         </div>
-                        <div class="flex my-7 gap-10 flex-wrap md:flex-nowrap">
+                        <div class="flex my-7 gap-10 flex-wrap justify-center md:flex-nowrap">
                             <div class="advantage-list-items">
                                 <div class="flex justify-center mb-3 md:mb-6 md:block"> <img
-                                        class="bg-gradient-to-r from-cyan-400 to-green-500 p-3 rounded-2xl"
-                                        src="../images/frame-3-advantage.png" class="mb-6" alt=""></div>
+                                        class="bg-gradient-to-r from-cyan-400 to-green-500 box-shadow-icon p-3 rounded-2xl"
+                                        src="../images/frame-3-advantage.png" alt=""></div>
 
                                 <h4 class="text-xl md:text-left text-center font-semibold mb-3">Chất lượng dịch vụ hàng
                                     đầu
                                 </h4>
-                                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Trang bị đầy đủ phương tiện y
+                                <p class="2xl:text-xl xl:text-lg lg:text-sm  text-center md:text-left">Trang
+                                    bị đầy đủ phương tiện y
                                     tế
                                     cùng ekip cấp cứu luôn túc trực giúp theo dõi và xử trí
                                     kịp thời các trường hợp</p>
                             </div>
                             <div class="advantage-list-items md:mt-16">
                                 <div class="flex justify-center mb-3 md:mb-6 md:block"> <img
-                                        class="bg-gradient-to-r from-cyan-400 to-green-500 p-3 rounded-2xl"
+                                        class="bg-gradient-to-r from-cyan-400 to-green-500 p-3 box-shadow-icon rounded-2xl"
                                         src="../images/frame-4-advantage.png" class="mb-6" alt=""></div>
                                 <h4 class="text-xl md:text-left text-center font-semibold mb-3">Chi phí hợp lý, tiết
                                     kiệm
                                 </h4>
-                                <p class="2xl:text-xl xl:text-lg lg:text-sm text-intro">Xây dựng đa dạng gói khám với
+                                <p class="2xl:text-xl xl:text-lg lg:text-sm  text-center md:text-left">Xây
+                                    dựng đa dạng gói khám với
                                     chi
                                     phí hợp lý, hỗ trợ trả góp qua thẻ tín dụng 0% lãi suất
                                     khi mua trọn gói. </p>
@@ -204,9 +209,9 @@
                 <h2 class=" font-bold text-2xl  2xl:text-3xl   pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16"> Hình ảnh
                 </h2>
-                <h3 class=" text-2xl  2xl:text-4xl mb-6 font-bold text-intro"> Hình ảnh khách hàng sử dụng
+                <h3 class=" text-2xl  2xl:text-4xl mb-6 font-bold "> Hình ảnh khách hàng sử dụng
                     dịch vụ Khám bệnh tại nhà</h3>
-                <p class="text-sm xl:text-lg 2xl:text-xl text-intro">Lorem ipsum dolor sit amet, consectetur
+                <p class="text-sm xl:text-lg 2xl:text-xl ">Lorem ipsum dolor sit amet, consectetur
                     adipiscing elit. Sapien, nec morbi mauris,
                     turpis fringilla
                     condimentum urna sagittis est. Id tortor odio posuere a cursus netus massa. Tellus etiam nisl
@@ -249,18 +254,19 @@
                 <h2 class="font-bold text-2xl  2xl:text-3xl  pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16">Câu hỏi
                 </h2>
-                <h3 class="text-2xl  2xl:text-4xl mb-6 font-bold text-intro">
+                <h3 class="text-2xl  2xl:text-4xl mb-6 font-bold ">
                     Những câu hỏi thường gặp
                 </h3>
                 <ul class="ask-list">
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md active:bg-inherit cursor-pointer  ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3  hidden answer rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
                             chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
@@ -269,15 +275,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -285,15 +292,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -301,15 +309,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md active:bg-inherit cursor-pointer  ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -317,15 +326,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -333,15 +343,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -349,15 +360,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -365,15 +377,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 hidden text-sm xl:text-lg 2xl:text-xl answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -381,15 +394,16 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md  active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus"><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus"><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 text-sm xl:text-lg 2xl:text-xl hidden answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer  rounded-md bg-slate-200">Khám thai và tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -397,15 +411,17 @@
                             đường thai kỳ. Bộ xét nghiệm làm hồ sơ sinh. Soi tươi và nuôi cấy dịch âm đạo. Xét nghiệm
                             nước tiểu. Tham gia lớp học, hội thảo tiền sản nhận nhiều quà tặng hấp dẫn.</p>
                     </li>
-                    <li class="ask-list-items my-4 rounded-md  ">
+                    <li class="ask-list-items my-4 rounded-md active:bg-inherit cursor-pointer ">
                         <div class="flex justify-between items-center bg-slate-200 rounded-md p-3 question-title">
                             <p class="text-sm xl:text-lg 2xl:text-xl">Bệnh
                                 viện Đa khoa Phương Đông có dịch vụ thai sản trọn gói
-                                không? </p> <i
-                                class="fa-solid p-1.5 rounded-full text-white bg-green-500 fa-plus w-7 h-7  items-center justify-center d-flex"></i>
+                                không? </p>
+                            <span class="plus  "><img src="../images/plus-circle.png" alt=""></span>
+                            <span class="hidden minus  "><img src="../images/minus-circle.png" alt=""></span>
                         </div>
-                        <p class="mt-2 p-3 text-sm xl:text-lg 2xl:text-xl hidden answer rounded-md bg-slate-200">Khám
-                            thai và tư vấn thai kỳ với chuyên
+                        <p class="mt-2 p-3  hidden answer   rounded-md bg-slate-200">Khám thai và
+                            tư vấn thai kỳ với
+                            chuyên
                             gia Phụ Sản.
                             Khám với bác sĩ chuyên khoa (các bệnh lý
                             liên quan đến thai sản). Khám với bác sĩ gây mê. Siêu âm thai 2D/4D. Theo dõi tim thai & cơn
@@ -423,10 +439,10 @@
                 <h2 class="font-bold text-2xl  2xl:text-3xl   pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16"> Bảng giá
                 </h2>
-                <h3 class="text-2xl  2xl:text-4xl mb-6 font-bold text-intro">
+                <h3 class="text-2xl  2xl:text-4xl mb-6 font-bold ">
                     Bảng giá dịch vụ tại Phương Đông
                 </h3>
-                <p class="text-sm xl:text-lg 2xl:text-xl text-intro">Lorem ipsum dolor sit amet, consectetur
+                <p class="text-sm xl:text-lg 2xl:text-xl ">Lorem ipsum dolor sit amet, consectetur
                     adipiscing
                     elit. Sapien, nec morbi mauris, turpis fringilla condimentum urna sagittis est. Id tortor odio
                     posuere a
@@ -437,19 +453,19 @@
                     mauris massa congue in rutrum vel. Augue est nunc a id quis mattis. Lorem ipsum dolor sit amet,
                     consectetur.
                 </p>
-                <p class="text-sm xl:text-lg 2xl:text-xl text-intro">Lưu ý: Tùy từng thời điểm, bảng giá có thể có
+                <p class="text-sm xl:text-lg 2xl:text-xl ">Lưu ý: Tùy từng thời điểm, bảng giá có thể có
                     thay
                     đổi. Để được báo giá chính xác nhất, quý khách liên hệ
                     tổng đài 19001806, chuyên viên sẽ nhanh chóng tư vấn, hỗ trợ quý khách đặt lịch và giải đáp thắc mắc
                 </p>
-                <h4 class="mt-4 text-lg lg:text-xl mb-6 text-intro font-bold">Quý khách vui lòng để lại số điện
+                <h4 class="mt-4 text-lg lg:text-xl mb-6  font-bold">Quý khách vui lòng để lại số điện
                     thoại,
                     chúng tôi sẽ liên hệ lại ngay!</h4>
                 <form action="" class="relative w-full ">
                     <input type="text" placeholder="Nhập số điện thoại..." class=" pl-6 rounded-3xl w-full h-14">
                     <button type="button"
                         class="absolute bg-orange-500 box-shadow-btn rounded-3xl text-white p-2 top-2  right-2 h-max"><span><i
-                                class="fa-regular fa-paper-plane"></i></span> <span>Gửi
+                                class="fa-regular fa-paper-plane"></i></span> <span class="">Gửi
                             Thông Tin</span></button>
                 </form>
                 <div class="flex justify-center md:justify-start gap-4 md:mb-4 mt-4">
@@ -479,7 +495,7 @@
                 <h2 class="font-bold text-2xl  2xl:text-3xl   pb-2 flex items-center gap-3 text-green-500">
                     <hr class="rounded-xl hidden lg:block text-green-500 h-1 w-16">Ưu Đãi
                 </h2>
-                <h3 class="text-2xl  2xl:text-4xl mb-2 md:mb-3 lg:mb-4 2xl:mb-6 4xl:mb-8 text-intro font-bold"> Chương
+                <h3 class="text-2xl  2xl:text-4xl mb-2 md:mb-3 lg:mb-4 2xl:mb-6 4xl:mb-8  font-bold"> Chương
                     trình ưu đãi đặc biệt dành cho
                     gói Khám bệnh tại nhà</h3>
             </div>
@@ -704,7 +720,7 @@
                     Dịch vụ của Phương Đông sẽ làm Quý khách hài lòng!
                 </h2>
             </div>
-            <div class="form-advise rounded-2xl sm:w-1/2 my-6 lg:my-12">
+            <div class="form-advise rounded-2xl sm:w-1/2 my-6 lg:my-8">
                 <div class="title-form-advise text-center rounded-t-2xl p-4">
                     <h2 class="md:text-xl font-bold pb-1 text-base 2xl:text-lg 4xl:text-xl">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</h2>
                     <p class="font-semibold md:text-sm">Đặt hẹn ngay để nhận tư vấn và chúng tôi sẽ xếp lịch khám kịp
@@ -729,7 +745,7 @@
         </section>
     </main>
     <footer
-        class="footer container from-purple-500 to-pink-500 mx-auto h-fit px-2.5 pt-2.5 xl:px-5 xl:pt-5 2xl:px-32 2xl:pt-5 4xl:px-64 pb-2.5">
+        class="footer bg-gradient-to-r relative from-sky-500 to-yellow-500 mx-auto h-fit px-2.5 pt-2.5 xl:px-5 xl:pt-5 2xl:px-32 2xl:pt-5 4xl:px-64 pb-2.5">
         <div class="logo-footer my-6">
             <img src="../images/logo-footer.png" alt="">
         </div>
