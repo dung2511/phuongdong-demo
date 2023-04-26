@@ -53,7 +53,7 @@ module.exports = {
         growDown: "growDown 0.4s ease-in-out",
         ansDown: "ansDown 0.4s ease-in-out",
         rotateAngle: "rotateAngle 0.7s ease-in-out",
-        list_items_menu: "list_items_menu 0.7s ease-in-out",
+        list_items_menu: "list_items_menu 0.3s ease-in-out",
       },
     },
   },
