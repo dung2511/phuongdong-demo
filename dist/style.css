@@ -917,6 +917,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\] {
+  background-color: url;
+}
+
 .bg-\[url\(\'\.\.\/images\/\.\.\/images\/bg-discount\.png\'\)\] {
   background-image: url('../images/../images/bg-discount.png');
 }
@@ -947,6 +951,30 @@ video {
 
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\.\.\/img\'\)\] {
+  background-image: url('../img');
+}
+
+.bg-\[url\(\'\.\.\/im\'\)\] {
+  background-image: url('../im');
+}
+
+.bg-\[url\(\'\.\.\/images\'\)\] {
+  background-image: url('../images');
+}
+
+.bg-\[url\(\'\.\.\/images\/\'\)\] {
+  background-image: url('../images/');
+}
+
+.bg-\[url\(\'\.\.\/images\/bg-quy-trinh\.png\'\)\] {
+  background-image: url('../images/bg-quy-trinh.png');
 }
 
 .from-\[\#16A085\] {
@@ -1895,6 +1923,42 @@ video {
     width: 25%;
   }
 
+  .\32xl\:w-\[\] {
+    width: ;
+  }
+
+  .\32xl\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .\32xl\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .\32xl\:w-4\/5 {
+    width: 80%;
+  }
+
+  .\32xl\:w-3\/5 {
+    width: 60%;
+  }
+
+  .\32xl\:w-3\/4 {
+    width: 75%;
+  }
+
+  .\32xl\:w-5\/6 {
+    width: 83.333333%;
+  }
+
+  .\32xl\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .\32xl\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .\32xl\:gap-14 {
     gap: 3.5rem;
   }
@@ -1984,6 +2048,23 @@ video {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .\32xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .\32xl\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .\32xl\:leading-\[57\] {
+    line-height: 57;
+  }
+
+  .\32xl\:leading-\[57px\] {
+    line-height: 57px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -1997,6 +2078,10 @@ video {
 
   .\33xl\:w-\[665px\] {
     width: 665px;
+  }
+
+  .\33xl\:w-3\/4 {
+    width: 75%;
   }
 
   .\33xl\:py-32 {
@@ -2057,6 +2142,10 @@ video {
 
   .\34xl\:w-3\/4 {
     width: 75%;
+  }
+
+  .\34xl\:w-\[90\%\] {
+    width: 90%;
   }
 
   .\34xl\:gap-14 {

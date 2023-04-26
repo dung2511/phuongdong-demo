@@ -1,11 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
-
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
-
 * {
   box-sizing: border-box;
 }
-
 input {
   outline: none;
 }
@@ -16,45 +13,8 @@ body {
 .title-advise {
   font-family: "Allura", cursive;
 }
-
 .form-advise form input {
   width: -webkit-fill-available;
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.whitespace-inital {
-  white-space: initial;
-}
-.underline-from-center {
-  position: relative;
-  padding-bottom: 5px;
-}
-.underline-from-center::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 45%;
-  height: 3px;
-  width: 0;
-  background-color: #3eed8b;
-  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
-  transform-origin: center bottom;
-  border-radius: 5px;
-}
-
-.underline-from-center:hover::before {
-  width: 14px;
-  transform: translateX(-5%);
 }
 .swiper-pagination-bullet {
   width: 13px;
