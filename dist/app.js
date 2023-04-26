@@ -1,19 +1,14 @@
 const questionTitles = document.querySelectorAll(".question-title");
-
 questionTitles.forEach((title) => {
-  title.addEventListener("click", () => {
+  title.addEventListener("click", (e) => {
     const question = title.parentElement;
     const answer = question.querySelector(".answer");
     const minus = question.querySelector(".minus");
     const plus = question.querySelector(".plus");
-    if (answer.style.display === "none") {
-      answer.style.display = "block";
-      minus.style.display = "block";
-      plus.style.display = "none";
-    } else {
-      answer.style.display = "none";
-      minus.style.display = "none";
-      plus.style.display = "block";
+    if (title.contains(e.target)) {
+      answer.classList.toggle("hidden");
+      minus.classList.toggle("hidden");
+      plus.classList.toggle("hidden");
     }
   });
 });
@@ -22,9 +17,6 @@ const angle_right = document.querySelector(".fa-angle-right");
 const list_items_menu = document.querySelector(".list-items-menu");
 list_menu_items.addEventListener("click", (e) => {
   if (list_menu_items.contains(e.target)) {
-    list_items_menu.classList.toggle("hidden");
-    angle_right.classList.toggle("rotate-90");
-  } else if (list_menu_items.contains(e.target)) {
     list_items_menu.classList.toggle("hidden");
     angle_right.classList.toggle("rotate-90");
   }
@@ -39,7 +31,7 @@ document.addEventListener("click", (e) => {
   } else if (closeMenu.contains(e.target)) {
     header_menu.classList.toggle("hidden");
     closeMenu.classList.toggle("hidden");
-   list_items_menu.classList.toggle("hidden");
+    list_items_menu.classList.toggle("hidden");
   }
 });
 

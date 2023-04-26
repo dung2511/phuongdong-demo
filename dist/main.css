@@ -86,9 +86,6 @@ body {
   -o-transition-delay: 0s;
   transition-delay: 0s;
 }
-.active {
-  background-color: #4444444a;
-}
 .discount-items.swiper-slide-active {
   background: linear-gradient(90deg, #16a085 0%, #f4d03f 100%);
 }
